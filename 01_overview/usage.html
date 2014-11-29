@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>5分钟指南 | Goja 使用指南</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="sogyf">
+        <meta name="description" content="Goaja Framework使用帮助">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../01_overview/setting.html" />
+        
+        
+        <link rel="prev" href="../01_overview/README.html" />
+        
+
+        <meta property="og:title" content="5分钟指南 | Goja 使用指南">
+        <meta property="og:site_name" content="Goja 使用指南">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/sogyf">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="sogyf/goajaFramework" data-level="1.1" data-basepath=".." data-revision="1417262620688">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/sogyf/goajaFramework" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/sogyf/goajaFramework/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/sogyf/goajaFramework/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Goja 使用指南</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/sogyf" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/sogyf/goajaFramework/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/sogyf/goajaFramework/edit/master/01_overview/usage.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="01_overview/README.html">
+                
+                <a href="../01_overview/README.html">
+                    <i class="fa fa-check"></i> <b>1.</b> `goja`框架概览
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="1.1" data-path="01_overview/usage.html">
+                            
+                            <a href="../01_overview/usage.html">
+                                <i class="fa fa-check"></i> <b>1.1.</b> 5分钟指南
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.2" data-path="01_overview/setting.html">
+                            
+                            <a href="../01_overview/setting.html">
+                                <i class="fa fa-check"></i> <b>1.2.</b> 配置文件说明
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="2" data-path="02_install/README.html">
+                
+                <a href="../02_install/README.html">
+                    <i class="fa fa-check"></i> <b>2.</b> `goja`安装指南
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="2.1" data-path="02_install/goja-cli.html">
+                            
+                            <a href="../02_install/goja-cli.html">
+                                <i class="fa fa-check"></i> <b>2.1.</b> `goja-cli`命令使用
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="3" data-path="03_master/README.html">
+                
+                <a href="../03_master/README.html">
+                    <i class="fa fa-check"></i> <b>3.</b> `goja`中的主要概念
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="04_route/README.html">
+                
+                <a href="../04_route/README.html">
+                    <i class="fa fa-check"></i> <b>4.</b> 路由
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="05_controller/README.html">
+                
+                <a href="../05_controller/README.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 控制器
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="06_template/README.html">
+                
+                <a href="../06_template/README.html">
+                    <i class="fa fa-check"></i> <b>6.</b> 模版`Freemarker`介绍
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="07_form/README.html">
+                
+                <a href="../07_form/README.html">
+                    <i class="fa fa-check"></i> <b>7.</b> 表单验证
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="08_db/README.html">
+                
+                <a href="../08_db/README.html">
+                    <i class="fa fa-check"></i> <b>8.</b> `ActiviteRecord`数据库操作介绍
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="09_plugin/README.html">
+                
+                <a href="../09_plugin/README.html">
+                    <i class="fa fa-check"></i> <b>9.</b> 常用插件
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="09_plugin/job.html">
+                            
+                            <a href="../09_plugin/job.html">
+                                <i class="fa fa-check"></i> <b>9.1.</b> 任务
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.2" data-path="09_plugin/mongo.html">
+                            
+                            <a href="../09_plugin/mongo.html">
+                                <i class="fa fa-check"></i> <b>9.2.</b> MONGODB
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.3" data-path="09_plugin/shiro.html">
+                            
+                            <a href="../09_plugin/shiro.html">
+                                <i class="fa fa-check"></i> <b>9.3.</b> shiro
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.4" data-path="09_plugin/redis.html">
+                            
+                            <a href="../09_plugin/redis.html">
+                                <i class="fa fa-check"></i> <b>9.4.</b> redis
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="10" data-path="10_cache/README.html">
+                
+                <a href="../10_cache/README.html">
+                    <i class="fa fa-check"></i> <b>10.</b> 缓存
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="11_email/README.html">
+                
+                <a href="../11_email/README.html">
+                    <i class="fa fa-check"></i> <b>11.</b> 发送电子邮件
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="12_test/README.html">
+                
+                <a href="../12_test/README.html">
+                    <i class="fa fa-check"></i> <b>12.</b> 测试您的控制器
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="13" data-path="13_kit/README.html">
+                
+                <a href="../13_kit/README.html">
+                    <i class="fa fa-check"></i> <b>13.</b> 齐全的工具帮助类
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="14" data-path="14_log/README.html">
+                
+                <a href="../14_log/README.html">
+                    <i class="fa fa-check"></i> <b>14.</b> 日志
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="15" data-path="15_ii8/README.html">
+                
+                <a href="../15_ii8/README.html">
+                    <i class="fa fa-check"></i> <b>15.</b> `ii8`国际化
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="16" data-path="16_libs/README.html">
+                
+                <a href="../16_libs/README.html">
+                    <i class="fa fa-check"></i> <b>16.</b> `goja`使用的库
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="17" data-path="17_deploy/README.html">
+                
+                <a href="../17_deploy/README.html">
+                    <i class="fa fa-check"></i> <b>17.</b> 部署到生产环境
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 8.333333333333334%;min-width: 4.166666666666667%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../01_overview/README.html" title="`goja`框架概览" class="chapter done new-chapter" data-progress="1" style="left: 4.166666666666667%;"></a>
+    
+        <a href="../01_overview/usage.html" title="5分钟指南" class="chapter done " data-progress="1.1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="../01_overview/setting.html" title="配置文件说明" class="chapter  " data-progress="1.2" style="left: 12.5%;"></a>
+    
+        <a href="../10_cache/README.html" title="缓存" class="chapter  " data-progress="10" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../11_email/README.html" title="发送电子邮件" class="chapter  " data-progress="11" style="left: 20.833333333333332%;"></a>
+    
+        <a href="../12_test/README.html" title="测试您的控制器" class="chapter  " data-progress="12" style="left: 25%;"></a>
+    
+        <a href="../13_kit/README.html" title="齐全的工具帮助类" class="chapter  " data-progress="13" style="left: 29.166666666666668%;"></a>
+    
+        <a href="../14_log/README.html" title="日志" class="chapter  " data-progress="14" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../15_ii8/README.html" title="`ii8`国际化" class="chapter  " data-progress="15" style="left: 37.5%;"></a>
+    
+        <a href="../16_libs/README.html" title="`goja`使用的库" class="chapter  " data-progress="16" style="left: 41.666666666666664%;"></a>
+    
+        <a href="../17_deploy/README.html" title="部署到生产环境" class="chapter  " data-progress="17" style="left: 45.833333333333336%;"></a>
+    
+        <a href="../02_install/README.html" title="`goja`安装指南" class="chapter  new-chapter" data-progress="2" style="left: 50%;"></a>
+    
+        <a href="../02_install/goja-cli.html" title="`goja-cli`命令使用" class="chapter  " data-progress="2.1" style="left: 54.166666666666664%;"></a>
+    
+        <a href="../03_master/README.html" title="`goja`中的主要概念" class="chapter  new-chapter" data-progress="3" style="left: 58.333333333333336%;"></a>
+    
+        <a href="../04_route/README.html" title="路由" class="chapter  new-chapter" data-progress="4" style="left: 62.5%;"></a>
+    
+        <a href="../05_controller/README.html" title="控制器" class="chapter  new-chapter" data-progress="5" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../06_template/README.html" title="模版`Freemarker`介绍" class="chapter  new-chapter" data-progress="6" style="left: 70.83333333333333%;"></a>
+    
+        <a href="../07_form/README.html" title="表单验证" class="chapter  new-chapter" data-progress="7" style="left: 75%;"></a>
+    
+        <a href="../08_db/README.html" title="`ActiviteRecord`数据库操作介绍" class="chapter  new-chapter" data-progress="8" style="left: 79.16666666666667%;"></a>
+    
+        <a href="../09_plugin/README.html" title="常用插件" class="chapter  new-chapter" data-progress="9" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../09_plugin/job.html" title="任务" class="chapter  " data-progress="9.1" style="left: 87.5%;"></a>
+    
+        <a href="../09_plugin/mongo.html" title="MONGODB" class="chapter  " data-progress="9.2" style="left: 91.66666666666667%;"></a>
+    
+        <a href="../09_plugin/shiro.html" title="shiro" class="chapter  " data-progress="9.3" style="left: 95.83333333333333%;"></a>
+    
+        <a href="../09_plugin/redis.html" title="redis" class="chapter  " data-progress="9.4" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_13">
+                    
+                        <h1 id="5-">5分钟指南</h1>
+<blockquote>
+<p>相关 <code>Maven</code>的配置和指南，请参考 <a href="http://maven.apache.org" target="_blank">Apache Maven</a></p>
+</blockquote>
+<ol>
+<li><p>建立Maven WEB工程</p>
+<p> 使用Maven命令创建一个WEB工程，这里作为示例，使用<code>todo</code>名称，如下所示：</p>
+<pre><code> mvn archetype:generate\
+     -DgroupId=todo\
+     -DartifactId=todo\
+     -DarchetypeArtifactId=maven-archetype-webapp
+</code></pre><p> <code>DarchetypeArtifactId=maven-archetype-webapp</code> 指定用Webapp的方式来创建一个Maven工程</p>
+<blockquote>
+<p>这里建议，groupId 和 artifactId保持一样吧，很多的都是区分开来，感觉有些多余，当然，这只是个建议</p>
+</blockquote>
+</li>
+<li><p>增加<code>japp</code>的项目依赖</p>
+<ul>
+<li>项目创建成果后，修改 <code>pom</code> 项目依赖，增加japp的依赖</li>
+<li><p>在<code>dependencies</code>节点上，增加以下依赖</p>
+<pre><code>  &lt;dependency&gt;
+      &lt;groupId&gt;com.github.sogyf&lt;/groupId&gt;
+      &lt;artifactId&gt;jfinal-app&lt;/artifactId&gt;
+      &lt;version&gt;0.0.9&lt;/version&gt;
+  &lt;/dependency&gt;
+</code></pre></li>
+<li>只需要增加<code>jfinal-app</code>的依赖即可，Maven会自动将其相关依赖传播到自己的应用中。</li>
+</ul>
+</li>
+<li><p>建立相关COC配置文件</p>
+<ul>
+<li><p>在<code>japp</code>中，采用了如下的约定形式，以不同包（注意，是固定包名）的方式，分别代表不同的作用；</p>
+<pre><code>  .
+  ├── logs                                # 日志文件目录
+  ├── misc                                # 相关构建脚本和数据库脚本的文件夹存放目录
+  ├── pom.xml                            # Maven的依赖文件
+  ├── readme.md                             # 项目描述MarkDown文件
+  ├── src                                 # Java WEB 工程源文件目录，包括视图和Java类以及单元测试类
+  │   ├── main                            # Java WEB 工程源文件目录，包括视图和Java类
+  │   │   ├── java                        # Java 源代码目录
+  │   │   │   ├── app                        # 应用包名（不能使用其他的）
+  │   │   │   │   ├── Const.java             # 应用常量类
+  │   │   │   │   ├── controllers         # jfinal 控制器目包
+  │   │   │   │   ├── dtos                  # 数据传输DTO包
+  │   │   │   │   ├── events                # 系统启动后或者异步事件包
+  │   │   │   │   ├── filters             # 过滤器,Servlet3.1规范
+  │   │   │   │   ├── interceptors         # jfinal 拦截器包，包括全局或者单个的拦截器
+  │   │   │   │   ├── jobs                 # 定时任务包
+  │   │   │   │   ├── kits                 # 常用工具包
+  │   │   │   │   ├── models                 # jfinal activieRecord 数据库映射包
+  │   │   │   │   └── validators             # 表单验证器包
+  │   │   ├── resources                     # WEB相关配置和资源包
+  │   │   │   ├── application.conf         # japp的配置文件（非常重要，名字不能更换）
+  │   │   │   ├── ehcache.xml             # 缓存配置
+  │   │   │   ├── logback.xml                # 日志配置
+  │   │   │   ├── shiro.ini                 # Apache Shiro身份登录等配置
+  │   │   │   └── sqlcnf                     # 数据库映射SQL 配置文件目录
+  │   │   └── webapp                      # WEB 工程目录，包括视图和静态资源等
+  │   │       ├── WEB-INF
+  │   │       │   └── views                # 视图，freemarker文件目录
+  │   │       └── static                     # 静态资源CSS、JS以及图片的存储目录
+  │   └── test                            # 单元测试目录
+  │       ├── java                        # 单元测试类包
+  └────── └── resources                    # 单元测试资源
+</code></pre></li>
+</ul>
+<ul>
+<li><p>如果您是Linux操作系统，可通过如下命令直接创建：</p>
+<pre><code class="lang-bash">mkdir -p src/main/java/app/{controllers,dtos,interceptors,events,jobs,kits,models,validators}
+mkdir -p src/main/resources/sqlcnf/
+mkdir -p src/main/webapp/WEB-INF/views
+mkdir -p src/main/webapp/static
+</code></pre>
+</li>
+<li><p>然后删除<code>webapp</code>目录下的<code>jsp</code>文件和<code>web.xml</code>文件</p>
+<pre><code class="lang-bash">rm -rf src/main/webapp/index.jsp 
+rm -rf src/main/webapp/WEB-INF/web.xml
+</code></pre>
+<p>到这里，相关的约定文件即配置完毕。</p>
+</li>
+</ul>
+</li>
+<li><p>新建首页控制器</p>
+<p> 在<code>app.controllers</code>目录下新建<code>IndexController</code>类，并使得<code>IndexController</code>类继承<code>com.github.sog.controller.BasicController</code>,如下所示：</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">package</span> app.controllers;
+
+ <span class="hljs-keyword">import</span> com.github.sog.controller.BasicController;
+
+ <span class="hljs-javadoc">/**
+  * &lt;p&gt;
+  * Default index Controller.
+  * &lt;/p&gt;
+  */</span>
+ <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IndexController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BasicController</span> {</span>
+
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">index</span>(){
+         render(<span class="hljs-string">"index.ftl"</span>)
+     }
+ }
+</code></pre>
+<ul>
+<li>首先，继承<code>BasicController</code>表示当前的类为控制器;</li>
+<li>其次，这个控制器处理的路由请求是 <code>\index</code>，路由引擎会自动根据 控制器类名 小写驼峰开头的方式 + 去掉 <code>Controller</code>后的字符串作为路由地址，比如：这里的<code>IndexController</code>路由地址就是 <code>\index</code>，这里我们称之为<code>controllerkey</code>。<blockquote>
+<p>同时，需要注意的是，如果<code>IndexController</code>是属于<code>app.controllers</code>包下的某个子包的话，那么路由应该是 <code>子包名称</code> + <code>\index</code>，例如：如果 <code>IndexController</code> 在 包 <code>app.controllers.admin</code>包下，那么对应的路由地址是 <code>\admin\index</code>，其他依次类推；</p>
+</blockquote>
+</li>
+<li><p>路由引导后，其它的就是按照<code>JFinal</code>的默认路由规则处理了。详细的可通过    <a href="http://www.jfinal.com/download/man_15" target="_blank">官方指导pdf</a>，这里摘录比较重要的路由规则表，如下：</p>
+<pre><code class="lang-json">  {
+      "<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"controllerkey"</span></span>, "<span class="hljs-attribute">Controller</span>": <span class="hljs-value"><span class="hljs-string">"ControllerkeyController.index()"</span></span>,
+      "<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"controllerkey/method"</span></span>, "<span class="hljs-attribute">Controller</span>": <span class="hljs-value"><span class="hljs-string">"ControllerkeyController.method()"</span></span>,
+      "<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"controllerKey/method/v0-v1"</span></span>, "<span class="hljs-attribute">Controller</span>": <span class="hljs-value"><span class="hljs-string">"ControllerkeyController.method(),所带 url 参数值为：v0-v1"</span></span>,
+      "<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"controllerKey/v0-v1"</span></span>, "<span class="hljs-attribute">Controller</span>": <span class="hljs-value"><span class="hljs-string">"ControllerkeyController.index(),所带 url 参数值为：v0-v1"</span></span>,
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>增加应用配置文件<code>application.conf</code></p>
+<p> 在 <code>src/main/resources</code>目录下新建<code>application.conf</code>文件，这里，我们先不管其具体的配置项的作用（虽然看起来就能够明白），文件内容如下：</p>
+<pre><code class="lang-properties"> app=todo
+ app.version=0.1
+
+ domain=http://127.0.0.0.1:8080/todo
+ dev.mode=true
+ cache=true
+
+ security=false
+
+ # Start the database plug-in configuration db.url said.
+ #db.url=jdbc:mysql://127.0.0.1:3306/todo?useUnicode=true&amp;characterEncoding=utf-8
+ #db.username=todo
+ #db.password=todo@japp
+ #db.sqlinxml=true
+
+ #job=true
+
+ # Enable MongdoDB plugin
+ #mongo.host=192.168.1.210
+ #mongo.port=27017
+ #mongo.db=todo
+ # Enable MongoDB ORM plugin.
+ #mongo.morphia=
+
+ # Enable Redis Plugin.
+ #redis.url=
+</code></pre>
+</li>
+<li><p>增加视图文件</p>
+<p> 在 第4步 的 控制器中 <code>IndexController.index()</code>方法中，使用了<code>render</code>方法，这里，<code>japp</code>中的约定，会直接渲染     <code>WEB-INF\view\controllerkey</code>下的指定文件，如果不明确调用<code>render</code>方法来指定的话，那么会自动根据方法名称选择对应的模版文件，比如，在这里的 <code>IndexController.index()</code>会自动渲染 <code>WEB-INF\view\index\index.ftl</code>文件出来</p>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>japp example<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>japp has start.<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p> 同理，如果<code>app.controllers</code>控制器包下，存在子包，那么在 <code>WEB-INF\view\</code>也应该存在同名的文件目录。</p>
+<p> 增加 <code>index.ftl</code> 文件，然后在<code>index.ftl</code>中增加点内容，比如 Like japp等</p>
+</li>
+<li><p>运行程序</p>
+<ul>
+<li><p>配置Maven 的Tomcat 插件 启动</p>
+<p>在项目的Maven的<code>pom.xml</code>中的<code>build</code>节点，增加如下配置</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">plugin</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="hljs-tag">&lt;/<span class="hljs-title">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="hljs-tag">&lt;/<span class="hljs-title">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">version</span>&gt;</span>2.2<span class="hljs-tag">&lt;/<span class="hljs-title">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">configuration</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">port</span>&gt;</span>9000<span class="hljs-tag">&lt;/<span class="hljs-title">port</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">path</span>&gt;</span>/todo<span class="hljs-tag">&lt;/<span class="hljs-title">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">uriEncoding</span>&gt;</span>${file.encoding}<span class="hljs-tag">&lt;/<span class="hljs-title">uriEncoding</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">configuration</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">plugin</span>&gt;</span>
+</code></pre>
+<p>在命令行下使用<code>mvn tomcat:run</code>命令启动，后访问<a href="http://localhost:9000/todo/index" target="_blank">http://localhost:9000/todo/index</a></p>
+<p>到这里，基本上一个普通的WEB页面就配置ok了!</p>
+</li>
+</ul>
+</li>
+</ol>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../01_overview/README.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../01_overview/setting.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

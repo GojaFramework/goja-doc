@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>`goja`框架概览 | Goja 使用指南</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="sogyf">
+        <meta name="description" content="Goaja Framework使用帮助">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../01_overview/usage.html" />
+        
+        
+        <link rel="prev" href="../index.html" />
+        
+
+        <meta property="og:title" content="`goja`框架概览 | Goja 使用指南">
+        <meta property="og:site_name" content="Goja 使用指南">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/sogyf">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="sogyf/goajaFramework" data-level="1" data-basepath=".." data-revision="1417262620688">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/sogyf/goajaFramework" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/sogyf/goajaFramework/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/sogyf/goajaFramework/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Goja 使用指南</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/sogyf" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/sogyf/goajaFramework/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/sogyf/goajaFramework/edit/master/01_overview/README.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="01_overview/README.html">
+                
+                <a href="../01_overview/README.html">
+                    <i class="fa fa-check"></i> <b>1.</b> `goja`框架概览
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="1.1" data-path="01_overview/usage.html">
+                            
+                            <a href="../01_overview/usage.html">
+                                <i class="fa fa-check"></i> <b>1.1.</b> 5分钟指南
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.2" data-path="01_overview/setting.html">
+                            
+                            <a href="../01_overview/setting.html">
+                                <i class="fa fa-check"></i> <b>1.2.</b> 配置文件说明
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="2" data-path="02_install/README.html">
+                
+                <a href="../02_install/README.html">
+                    <i class="fa fa-check"></i> <b>2.</b> `goja`安装指南
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="2.1" data-path="02_install/goja-cli.html">
+                            
+                            <a href="../02_install/goja-cli.html">
+                                <i class="fa fa-check"></i> <b>2.1.</b> `goja-cli`命令使用
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="3" data-path="03_master/README.html">
+                
+                <a href="../03_master/README.html">
+                    <i class="fa fa-check"></i> <b>3.</b> `goja`中的主要概念
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="04_route/README.html">
+                
+                <a href="../04_route/README.html">
+                    <i class="fa fa-check"></i> <b>4.</b> 路由
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="05_controller/README.html">
+                
+                <a href="../05_controller/README.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 控制器
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="06_template/README.html">
+                
+                <a href="../06_template/README.html">
+                    <i class="fa fa-check"></i> <b>6.</b> 模版`Freemarker`介绍
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="07_form/README.html">
+                
+                <a href="../07_form/README.html">
+                    <i class="fa fa-check"></i> <b>7.</b> 表单验证
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="08_db/README.html">
+                
+                <a href="../08_db/README.html">
+                    <i class="fa fa-check"></i> <b>8.</b> `ActiviteRecord`数据库操作介绍
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="09_plugin/README.html">
+                
+                <a href="../09_plugin/README.html">
+                    <i class="fa fa-check"></i> <b>9.</b> 常用插件
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="9.1" data-path="09_plugin/job.html">
+                            
+                            <a href="../09_plugin/job.html">
+                                <i class="fa fa-check"></i> <b>9.1.</b> 任务
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.2" data-path="09_plugin/mongo.html">
+                            
+                            <a href="../09_plugin/mongo.html">
+                                <i class="fa fa-check"></i> <b>9.2.</b> MONGODB
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.3" data-path="09_plugin/shiro.html">
+                            
+                            <a href="../09_plugin/shiro.html">
+                                <i class="fa fa-check"></i> <b>9.3.</b> shiro
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="9.4" data-path="09_plugin/redis.html">
+                            
+                            <a href="../09_plugin/redis.html">
+                                <i class="fa fa-check"></i> <b>9.4.</b> redis
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="10" data-path="10_cache/README.html">
+                
+                <a href="../10_cache/README.html">
+                    <i class="fa fa-check"></i> <b>10.</b> 缓存
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="11_email/README.html">
+                
+                <a href="../11_email/README.html">
+                    <i class="fa fa-check"></i> <b>11.</b> 发送电子邮件
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="12_test/README.html">
+                
+                <a href="../12_test/README.html">
+                    <i class="fa fa-check"></i> <b>12.</b> 测试您的控制器
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="13" data-path="13_kit/README.html">
+                
+                <a href="../13_kit/README.html">
+                    <i class="fa fa-check"></i> <b>13.</b> 齐全的工具帮助类
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="14" data-path="14_log/README.html">
+                
+                <a href="../14_log/README.html">
+                    <i class="fa fa-check"></i> <b>14.</b> 日志
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="15" data-path="15_ii8/README.html">
+                
+                <a href="../15_ii8/README.html">
+                    <i class="fa fa-check"></i> <b>15.</b> `ii8`国际化
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="16" data-path="16_libs/README.html">
+                
+                <a href="../16_libs/README.html">
+                    <i class="fa fa-check"></i> <b>16.</b> `goja`使用的库
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="17" data-path="17_deploy/README.html">
+                
+                <a href="../17_deploy/README.html">
+                    <i class="fa fa-check"></i> <b>17.</b> 部署到生产环境
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 4.166666666666667%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../01_overview/README.html" title="`goja`框架概览" class="chapter done new-chapter" data-progress="1" style="left: 4.166666666666667%;"></a>
+    
+        <a href="../01_overview/usage.html" title="5分钟指南" class="chapter  " data-progress="1.1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="../01_overview/setting.html" title="配置文件说明" class="chapter  " data-progress="1.2" style="left: 12.5%;"></a>
+    
+        <a href="../10_cache/README.html" title="缓存" class="chapter  " data-progress="10" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../11_email/README.html" title="发送电子邮件" class="chapter  " data-progress="11" style="left: 20.833333333333332%;"></a>
+    
+        <a href="../12_test/README.html" title="测试您的控制器" class="chapter  " data-progress="12" style="left: 25%;"></a>
+    
+        <a href="../13_kit/README.html" title="齐全的工具帮助类" class="chapter  " data-progress="13" style="left: 29.166666666666668%;"></a>
+    
+        <a href="../14_log/README.html" title="日志" class="chapter  " data-progress="14" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../15_ii8/README.html" title="`ii8`国际化" class="chapter  " data-progress="15" style="left: 37.5%;"></a>
+    
+        <a href="../16_libs/README.html" title="`goja`使用的库" class="chapter  " data-progress="16" style="left: 41.666666666666664%;"></a>
+    
+        <a href="../17_deploy/README.html" title="部署到生产环境" class="chapter  " data-progress="17" style="left: 45.833333333333336%;"></a>
+    
+        <a href="../02_install/README.html" title="`goja`安装指南" class="chapter  new-chapter" data-progress="2" style="left: 50%;"></a>
+    
+        <a href="../02_install/goja-cli.html" title="`goja-cli`命令使用" class="chapter  " data-progress="2.1" style="left: 54.166666666666664%;"></a>
+    
+        <a href="../03_master/README.html" title="`goja`中的主要概念" class="chapter  new-chapter" data-progress="3" style="left: 58.333333333333336%;"></a>
+    
+        <a href="../04_route/README.html" title="路由" class="chapter  new-chapter" data-progress="4" style="left: 62.5%;"></a>
+    
+        <a href="../05_controller/README.html" title="控制器" class="chapter  new-chapter" data-progress="5" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../06_template/README.html" title="模版`Freemarker`介绍" class="chapter  new-chapter" data-progress="6" style="left: 70.83333333333333%;"></a>
+    
+        <a href="../07_form/README.html" title="表单验证" class="chapter  new-chapter" data-progress="7" style="left: 75%;"></a>
+    
+        <a href="../08_db/README.html" title="`ActiviteRecord`数据库操作介绍" class="chapter  new-chapter" data-progress="8" style="left: 79.16666666666667%;"></a>
+    
+        <a href="../09_plugin/README.html" title="常用插件" class="chapter  new-chapter" data-progress="9" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../09_plugin/job.html" title="任务" class="chapter  " data-progress="9.1" style="left: 87.5%;"></a>
+    
+        <a href="../09_plugin/mongo.html" title="MONGODB" class="chapter  " data-progress="9.2" style="left: 91.66666666666667%;"></a>
+    
+        <a href="../09_plugin/shiro.html" title="shiro" class="chapter  " data-progress="9.3" style="left: 95.83333333333333%;"></a>
+    
+        <a href="../09_plugin/redis.html" title="redis" class="chapter  " data-progress="9.4" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_11">
+                    
+                        <h1 id="-">框架概览</h1>
+<p>核心：<a href="http://www.jfinal.com" target="_blank">jfinal</a></p>
+<blockquote>
+<p>JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。</p>
+</blockquote>
+<p><code>japp</code>核心就是<code>jFinal</code>，只是在<code>jfinal</code>的基础上，为常见的插件、组件以及相关代码和组织习惯而设定的一个WEB框架。</p>
+<p><code>Jfinal</code>非常优秀，很好的插件体系，良好、简单的代码设计、MVC轻巧的构思、Java中应该是最方面的<code>ActiveRecord</code>数据库操作等等优点，但是由于之前我对<code>PlayFramework</code>的使用经历，感觉<code>jfinal</code>对于其配置方式，采用了比较宽松自由的方式来处理，只需要继承<code>JfinalConfig</code>类，设定路由、控制器、插件等；</p>
+<p>在这一点，我由于受<code>PlayFramework</code>影响较深，感觉对于过多的暴露出配置方法和项目，对于团队开发的沟通起来，比较费时费力，如果参考<code>PlayFramework</code>的配置方法，只需要将配置项说明沟通好，就一切ok了！（当然，是否真的如此，还需要看团队吧）。</p>
+<p>由于这样的原因，就有了<code>Goja</code>.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../01_overview/usage.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>
