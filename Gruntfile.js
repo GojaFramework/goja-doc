@@ -11,9 +11,9 @@ module.exports = function(grunt) {
             development: {
                 output: path.join(__dirname, ".grunt/gitbook"),
                 input: "./",
-                title: "japp 使用指南",
-                description: "japp(jfinal application)框架使用帮助",
-                github: "sogyf/japp"
+                title: "Goja 使用指南",
+                description: "Goaja Framework使用帮助",
+                github: "sogyf/goajaFramework"
             }
         },
         'gh-pages': {

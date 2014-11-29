@@ -1,10 +1,11 @@
 # Summary
 
-* [`japp`框架概览](01_overview/README.md)
+* [`goja`框架概览](01_overview/README.md)
     * [5分钟指南](01_overview/usage.md)
-* [`japp`安装指南](02_install/README.md)
-    * [jfapp命令使用](02_install/jfapp.md)
-* [`japp`中的主要概念](03_master/README.md)
+    * [配置文件说明](01_overview/setting.md)
+* [`goja`安装指南](02_install/README.md)
+    * [`goja-cli`命令使用](02_install/goja-cli.md)
+* [`goja`中的主要概念](03_master/README.md)
 * [路由](04_route/README.md)
 * [控制器](05_controller/README.md)
 * [模版`Freemarker`介绍](06_template/README.md)
@@ -21,6 +22,6 @@
 * [齐全的工具帮助类](13_kit/README.md)
 * [日志](14_log/README.md)
 * [`ii8`国际化](15_ii8/README.md)
-* [`japp`使用的库](16_libs/README.md)
+* [`goja`使用的库](16_libs/README.md)
 * [部署到生产环境](17_deploy/README.md)
 
